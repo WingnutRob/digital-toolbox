@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#6B8E23">
+  <meta name="description" content="Digital Toolbox — quick links for Johnson County Wastewater and work resources.">
+  <title>Digital Toolbox</title>
+  <style>
+    :root { color-scheme: dark; --olive:#6B8E23; --ink:#111713; --panel:#1a211b; --line:#384338; --muted:#b5c0b2; }
+    * { box-sizing:border-box }
+    body { margin:0; min-height:100vh; display:grid; place-items:center; padding:32px 18px; color:#f3f5ef; background:radial-gradient(ellipse at 50% -10%, #354624 0, #1b241b 38%, #101511 75%); font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif }
+    main { width:min(100%, 620px) }
+    .panel { padding:clamp(24px,6vw,48px); border:1px solid var(--line); border-radius:18px; background:linear-gradient(150deg,rgba(31,41,32,.97),rgba(20,27,21,.97)); box-shadow:0 24px 70px #0008 }
+    .eyebrow { display:flex; align-items:center; gap:10px; color:#cad6b8; font-size:.76rem; letter-spacing:.16em; text-transform:uppercase }
+    .eyebrow:before { content:""; width:26px; height:3px; background:var(--olive); border-radius:3px }
+    h1 { margin:12px 0 4px; font-size:clamp(2.2rem,8vw,3.4rem); line-height:1.05; letter-spacing:-.045em }
+    .intro { margin:0 0 28px; color:var(--muted) }
+    .rule { height:1px; margin:24px 0; background:var(--line) }
+    h2 { margin:0 0 13px; color:#dbe5ce; font-size:.78rem; letter-spacing:.14em; text-transform:uppercase }
+    .links { display:grid; gap:10px }
+    a.button { display:flex; justify-content:space-between; align-items:center; min-height:54px; padding:13px 16px; border:1px solid #455241; border-radius:10px; color:#f4f6f0; text-decoration:none; background:#202a20; transition:background .15s,border-color .15s,transform .15s }
+    a.button:hover, a.button:focus-visible { border-color:#9cbd59; background:#2a3825; transform:translateY(-1px); outline:none }
+    a.button.primary { border-color:#87a94b; background:var(--olive); font-weight:650 }
+    a.button.primary:hover, a.button.primary:focus-visible { background:#789d2b }
+    .arrow { color:#cedbbd; font-size:1.1rem }
+    .note { margin:18px 0 0; color:#9ca99a; font-size:.78rem }
+    footer { margin-top:20px; color:#879183; text-align:center; font-size:.75rem }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="panel" aria-labelledby="title">
+      <div class="eyebrow">Johnson County · Field resources</div>
+      <h1 id="title">Digital Toolbox</h1>
+      <p class="intro">Work contacts and useful links, in one place.</p>
+      <h2>Connect</h2>
+      <nav class="links" aria-label="Contact links">
+        <a class="button primary" href="https://www.linkedin.com/in/robert-perrin-63227b40/">LinkedIn <span class="arrow" aria-hidden="true">↗</span></a>
+        <a class="button" href="mailto:Robert.Perrin@jcw.org">Work email <span class="arrow" aria-hidden="true">↗</span></a>
+        <a class="button" href="tel:+19137158484">Work phone <span class="arrow" aria-hidden="true">↗</span></a>
+      </nav>
+      <div class="rule"></div>
+      <h2>Quick links</h2>
+      <nav class="links" aria-label="Work resources">
+        <a class="button" href="https://notifyjoco.org/" target="_blank" rel="noopener noreferrer">NotifyJoCo <span class="arrow" aria-hidden="true">↗</span></a>
+        <a class="button" href="https://www.jocogov.org/department/wastewater/about-us" target="_blank" rel="noopener noreferrer">Johnson County Wastewater · About Us <span class="arrow" aria-hidden="true">↗</span></a>
+      </nav>
+      <p class="note">Quick access to professional contacts and public resources.</p>
+    </section>
+    <footer>Digital Toolbox</footer>
+  </main>
+</body>
+</html>
